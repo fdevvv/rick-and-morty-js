@@ -1,35 +1,36 @@
 .links-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .redes {
     color: #000;
-}
-
-.redes-list {
+    &-list {
     display: flex;
     gap: 2rem;
     align-items: flex-end;
     font-size: 5rem;
+    }
 }
 
 .logo {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.logo img {
-    width: 30%;
+    & img {
+        width: 100%;
+    }
+    &-container {
+        width: 30%;
+        margin-bottom: 3rem;
+    }
 }
 
 .redes-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 100px;
+    height: 80px;
 }
 
 @media (max-width:769px) {
@@ -37,7 +38,7 @@
         margin-bottom: 1rem;
         padding: 1rem 2rem;
     }
-    .logo img {
+    .logo-container {
         width: 50%;
     }
 }
@@ -48,7 +49,7 @@
         justify-content: center;
         align-items: center;
     }
-    .logo img {
+    .logo-container {
         width: 70%;
     }
 }

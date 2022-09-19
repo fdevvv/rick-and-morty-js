@@ -20,13 +20,12 @@ html {
 
 .links-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .redes {
   color: #000;
 }
-
 .redes-list {
   display: flex;
   gap: 2rem;
@@ -35,29 +34,49 @@ html {
 }
 
 .logo {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .logo img {
+  width: 100%;
+}
+.logo-container {
   width: 30%;
+  margin-bottom: 3rem;
 }
 
 .redes-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 100px;
+  height: 80px;
 }
 
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: inherit;
+  font-size: 2em;
+  padding: 0.5rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+/* media queries */
 @media (max-width: 769px) {
   .links-container {
     margin-bottom: 1rem;
     padding: 1rem 2rem;
   }
-  .logo img {
+  .logo-container {
     width: 50%;
   }
 }
@@ -67,7 +86,7 @@ html {
     justify-content: center;
     align-items: center;
   }
-  .logo img {
+  .logo-container {
     width: 70%;
   }
 }
@@ -189,6 +208,7 @@ html {
   grid-template-rows: repeat(4, 1fr);
   gap: 2rem;
   margin-bottom: 1rem;
+  padding: 2rem;
 }
 
 @media (max-width: 769px) {
